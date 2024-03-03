@@ -1,0 +1,178 @@
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+  }
+  nav{
+    height: 6%;
+    background-color: rgb(70, 4, 86);
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cerrar{
+    top: 30%;
+    width: 30%;
+    margin: 100px;
+    
+    color: #FAFAFA;
+    
+   
+    
+    
+    
+  }
+  header {
+    display: flex;
+    justify-content: end;
+    background-image: url("https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    color: white;
+  }
+  header h1 {
+    text-align: end;
+    width: 50%;
+    padding: 25px 25px;
+    font-size: 2rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    background: url(fondo.png), #7b4397;
+    background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430);
+   
+  }
+  .section1 {
+    flex: 2px;
+    padding: 5%;
+  }
+  .section2 {
+   padding: 20px;
+    color:white;
+    flex: 70px;
+  }
+  .saldo{
+    text-align: center;
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    font-size: 20px; /* Tamaño de letra */
+    
+
+
+  }
+  .limpiarEstilos::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   
+  
+  .cabecero {  
+    position: relative;   
+    padding: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+    background: url(fondo.png), #c3abcf;
+    background: url(fondo.png), linear-gradient(to left, #be8bd8, #dc2430);
+   
+    
+  }
+  
+  .presupuesto {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    justify-content: center;
+    
+
+    align-items: center;
+}
+
+button {
+ 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+   
+  background-color: #f7941d;
+  color: white;
+  
+  
+}
+
+
+button:hover {
+  background-color: #ffb74d;
+}
+#saldo{
+  grid-column: 1;
+}
+#mostrar-saldo {
+  margin-top: 10px;
+  background-color: #f06292;
+  float: right;
+  
+}
+
+#mostrar-saldo:hover {
+  background-color: #ff70b5;
+  float: right;
+}
+
+
+#confirmar-retiro {
+  background-color: #18f02a;
+}
+
+#confirmar-retiro:hover {
+  background-color: #e2f76c;
+}
+
+#confirmar-ingreso {
+  background-color: #77dd77;
+}
+
+#confirmar-ingreso:hover {
+  background-color: #94ee94;
+}
+/* Seleccionamos los inputs dentro de "Retiro" e "Ingreso" */
+#retiro input {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ecd550;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+#ingreso input {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

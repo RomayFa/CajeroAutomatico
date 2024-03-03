@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./assets/css/stylesaldo.css" />
+    <!-- Javascript propio con defer, ELIGO EL JS DEL ARCHIVO HOME.JS=> que se ejecute cuando el DOM ESTE CARGADO POR COMPLETO-->
+    <script defer src="./assets/js/Saldo.js"></script>
+    <script defer src="./assets/js/Agregar.js"></script>
+    <script defer src="./assets/js/Retirar.js"></script>
+    <script defer src="./assets/js/Funcion.js"></script>
+
+    <title>HOME</title>
+  </head>
+  <body>
+    <nav>
+      <span>Banco DEV.F</span>
+      <button id="logout" class="cerrar">Cerrar sesión</button>
+    </nav>
+    <header>
+      <h1 id="tituloBienvenida">Bienvenido</h1>
+    </header>
+    <div class="row">
+    <section class="section1">
+     <div class="cabecero">
+      <div class="presupuesto">
+        <div class="presupuesto_titulo">CUENTA</div>
+
+        <div id="saldo-container">
+          <p id="saldo" class="saldo"> $200</p>
+          <button id="mostrar-saldo" onclick="mostrarOcultarSaldo()">
+            Ocultar/Mostrar Saldo
+          </button>
+        </div>
+    </section>
+    <section class="section2">
+      <section>
+          <button class="accion-button" onclick="mostrarRetiro()">
+            Retirar Monto
+          </button>
+          <button id="confirmar-retiro" onclick="confirmarRetiroFn()">
+            Confirmar
+          </button>
+          <div id="retiro">
+            
+            <p>Ingrese la cantidad a retirar:</p>
+            <input type="number" id="cantidad-retiro" />
+            
+          </div>
+        </section>
+        <section>
+        <button class="accion-button" onclick="mostrarIngreso()">
+            Ingresar Monto
+          </button>
+          <button id="confirmar-ingreso" onclick="confirmarIngresoFn()">
+            Confirmar
+          </button>
+          <div id="ingreso">
+            
+            <p>Ingrese la cantidad a ingresar:</p>
+            <input type="number" id="cantidad-ingreso" />
+            
+       </section>
+     </section>
+
+    </div>
+     </body>
+</html>
